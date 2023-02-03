@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Variables */
+:root {
+    --White: rgb(240, 240, 240);
+    --Dark: rgb(10, 10, 10);
+    --Primary: rgb(210, 100, 25);
+    --Secondary: rgb(20, 145, 150);
+    --Hover: rgba(240, 240, 240, 0.2);
+}
+
+/* Helper */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(10, 10, 10, 0.9), rgb(10, 10, 10, 0.8)), 
+    url(../Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Logo */
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.logo a {
+    color: var(--White);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+/* Anime Cards */
+.container {
+    position: relative;
+}
+.container .cards {
+    display: flex;
+}
+.container .cards .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .cards .card img {
+    width: 200px;
+    height: 280px;
+    margin: 5px;
+}
