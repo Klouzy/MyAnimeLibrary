@@ -4,8 +4,6 @@
 :root {
     --White: rgb(240, 240, 240);
     --Dark: rgb(10, 10, 10);
-    --Primary: rgb(210, 100, 25);
-    --Secondary: rgb(20, 145, 150);
     --Hover: rgba(240, 240, 240, 0.2);
 }
 
@@ -41,13 +39,27 @@ body {
     margin: 50px;
 }
 
+/* Title */
+.title {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.title p {
+    color: var(--White);
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* Slider */
 .slider-container {
     margin: 15px;
 }
 .slider-container .slider-wrapper {
     position: relative;
-    max-width: 65rem;
+    max-width: 1250px;
     margin: 0 auto;
 }
 .slider-container .slider-wrapper .slider {
@@ -66,21 +78,20 @@ body {
 .slider-container .slider-wrapper .slider-nav {
     position: absolute;
     display: flex;
-    column-gap: 1rem;
-    bottom: 1.25rem;
+    column-gap: 15px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
 }
 .slider-container .slider-wrapper .slider-nav a {
     background: var(--White);
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    opacity: 0.75;
 }
 .slider-container .slider-wrapper .slider-nav a:hover {
-    opacity: 1;
+    background: var(--Hover);
 }
 
 /* Anime Cards */
@@ -112,6 +123,24 @@ body {
         font-size: 30px;
         font-weight: bold;
         margin: 50px;
+    }
+    .title {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .title p {
+        color: var(--White);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .slider-container .slider-wrapper .slider-nav a {
+        background: var(--White);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
     }
     .container .cards .card img {
         width: 160px;
